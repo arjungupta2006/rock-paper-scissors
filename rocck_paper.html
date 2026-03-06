@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title class="hello">ROCK PAPER SCISSORS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="titie">
+  <p>ROCK PAPER SCISSORS</p>
+  <button onclick="playGame('rock')" class="button">
+    <img src="icons/rock-emoji.png" class="icon" />
+  </button>
+  <button onclick="playGame('paper')" class="button">
+    <img src="icons/paper-emoji.png" class="icon" />
+  </button>
+  <button onclick="playGame('scissors')" class="button">
+    <img src="icons/scissors-emoji.png" class="icon" />
+  </button>
+
+  <p class="js-info">you win</p>
+  <p class="js-data"></p>
+  <p class="js-score score"></p>
+
+  <button
+    onclick="score.wins=0;score.losses=0;score.ties=0;
+  localStorage.removeItem('score')
+  updatescore();"
+    class="ResetButton"
+  >
+    Reset Score
+  </button>
+  <script src="script.js"></script>
+</body>
